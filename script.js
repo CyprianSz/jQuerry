@@ -11,8 +11,11 @@ $(document).ready(function(){
 	$('button').click(function(){
 		var howmany = prompt("Podaj szerokosc boku tablicy");
 		$('#container').empty();
-		
-		$('#container').append('<div class="grid"></div>')
+
+		for(i=1;i<=Math.pow(howmany,2);i++){
+			$('#container').append('<div class="grid"></div>');
+		}
+
 	});
 
 });
