@@ -89,9 +89,10 @@ $(document).ready(function(){
 
 	$("#czyszczenie").click(function(){
 		wyczysc();
-		inez();
+		
 		zapytaj();
 		if (x > 0 && x < 201) {
+			inez();
 			kostki(x);
 			$(".elo").css('background-color', 'black');
 			czyszczenie();
