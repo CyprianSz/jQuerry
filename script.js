@@ -89,7 +89,7 @@ $(document).ready(function(){
 
 	$("#czyszczenie").click(function(){
 		wyczysc();
-		
+		$('#container').css('backgroundImage','none');
 		zapytaj();
 		if (x > 0 && x < 201) {
 			inez();
